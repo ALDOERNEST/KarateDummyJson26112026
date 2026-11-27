@@ -8,11 +8,6 @@ on:
         required: true
         default: "@smoke"
         type: string
-      env:
-        description: "Entorno de ejecución (ej. dev, qa, staging)"
-        required: false
-        default: "dev"
-        type: string
   push:
     branches:
       - main
@@ -38,7 +33,7 @@ jobs:
       - name: Run Karate tests by tag
         env:
           KARATE_TAG: ${{ inputs.tag || '@smoke' }}
-          KARATE_ENV: ${{ inputs.env || 'dev' }}
+          KARATE_ENV: "dev"
         run: >
           mvn test
           -Dkarate.env="${KARATE_ENV}"
