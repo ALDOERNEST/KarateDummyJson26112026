@@ -6,7 +6,7 @@ on:
       tag:
         description: "Tag de Karate a ejecutar (ej. @smoke, @regression, @dummy)"
         required: true
-        default: "@smoke"
+        default: "@auth"
         type: string
   push:
     branches:
