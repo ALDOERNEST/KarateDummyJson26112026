@@ -6,6 +6,6 @@ class AuthLoginTest {
 
     @Karate.Test
     Karate loginEndpointTests() {
-        return Karate.run("classpath:auth-login.feature");
+        return Karate.run("classpath:auth-login.feature"); 
     }
 }
