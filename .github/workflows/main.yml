@@ -8,11 +8,6 @@ on:
         required: true
         default: "@smoke"
         type: string
-      env:
-        description: "Entorno de ejecución (karate.env)"
-        required: false
-        default: "dev"
-        type: string
   push:
     branches:
       - main
