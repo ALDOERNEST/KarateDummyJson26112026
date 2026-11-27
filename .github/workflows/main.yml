@@ -8,6 +8,11 @@ on:
         required: true
         default: "@smoke"
         type: string
+      env:
+        description: "Entorno de ejecución (ej. dev, qa, staging)"
+        required: false
+        default: "dev"
+        type: string
   push:
     branches:
       - main
