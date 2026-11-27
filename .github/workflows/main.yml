@@ -32,7 +32,7 @@ jobs:
 
       - name: Run Karate tests by tag
         env:
-          KARATE_TAG: ${{ inputs.tag || '@smoke' }}
+          KARATE_TAG: ${{ inputs.tag || '@auth' }}
           KARATE_ENV: "dev"
         run: >
           mvn test
